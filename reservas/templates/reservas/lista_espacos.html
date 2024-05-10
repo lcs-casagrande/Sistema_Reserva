@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Espaços</title>
+</head>
+<body>
+    <h1>Espaços Disponíveis</h1>
+    <ul>
+        {% for espaco in espacos %}
+            <li>{{ espaco.nome }} - Capacidade: {{ espaco.capacidade }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
